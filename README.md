@@ -12,9 +12,9 @@ Following operations are supported as of now,
 - Read all Organizations to which a user belongs.
 
 # Schema
-The schema would consist of the following tables
-- Organization (stores Oragnization records)
-- User (stores user records)
+The schema would consist of the following tables,
+- Organization (stores Orgnization records)
+- User (stores User records)
 - Organization_User (a bridge table to store associations between organizations and users)
 
 ```
