@@ -21,7 +21,11 @@ public class UserController {
     }
 
     @PostMapping("/api/user")
-    public void createOrganization(User user) {
+    public void createUser(User user) {
         userService.createUser(user);
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 }

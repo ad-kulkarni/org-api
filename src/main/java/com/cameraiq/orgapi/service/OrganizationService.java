@@ -25,4 +25,8 @@ public class OrganizationService {
     public Optional<Organization> getOrganizationById(Long id) {
         return organizationRepository.findById(id);
     }
+
+    public void setOrganizationRepository(OrganizationRepository organizationRepository) {
+        this.organizationRepository = organizationRepository;
+    }
 }

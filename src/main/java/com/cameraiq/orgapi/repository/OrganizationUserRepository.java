@@ -74,4 +74,16 @@ public class OrganizationUserRepository {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found");
         }
     }
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    public void setUserRepository(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public void setOrganizationRepository(OrganizationRepository organizationRepository) {
+        this.organizationRepository = organizationRepository;
+    }
 }

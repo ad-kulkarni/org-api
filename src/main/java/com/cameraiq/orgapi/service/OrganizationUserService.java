@@ -30,4 +30,8 @@ public class OrganizationUserService {
     public void deleteUserFromOrganization(OrganizationUser organizationUser) {
         organizationUserRepository.deleteUserFromOrganization(organizationUser);
     }
+
+    public void setOrganizationUserRepository(OrganizationUserRepository organizationUserRepository) {
+        this.organizationUserRepository = organizationUserRepository;
+    }
 }

@@ -24,4 +24,8 @@ public class OrganizationController {
     public void createOrganization(Organization organization) {
         organizationService.createOrganization(organization);
     }
+
+    public void setOrganizationService(OrganizationService organizationService) {
+        this.organizationService = organizationService;
+    }
 }

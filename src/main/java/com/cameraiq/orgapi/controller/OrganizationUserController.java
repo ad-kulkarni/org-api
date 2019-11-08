@@ -57,4 +57,16 @@ public class OrganizationUserController {
         organizationUser.setUserId(userId);
         return organizationUser;
     }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+    public void setOrganizationService(OrganizationService organizationService) {
+        this.organizationService = organizationService;
+    }
+
+    public void setOrganizationUserService(OrganizationUserService organizationUserService) {
+        this.organizationUserService = organizationUserService;
+    }
 }
