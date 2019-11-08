@@ -20,7 +20,7 @@ Following operations are supported as of now,
 # Build tools used
 - Gradle 4.10 (Gradle 4+ recommended)
 
-# Building the project
+# Building/Running the project
 - Option 1: Using Gradle<br/>
   After cloning the project and installing Gradle, use a command line tool and navigate to the root directory of the project.
   Use the following command to run the application,<br/><br/>
