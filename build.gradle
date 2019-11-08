@@ -1,12 +1,23 @@
+buildscript {
+	dependencies {
+		classpath("se.transmode.gradle:gradle-docker:1.2")
+	}
+}
+
 plugins {
 	id 'org.springframework.boot' version '2.2.0.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
+	id 'application'
 }
 
+apply plugin: 'docker'
+
 group = 'com.cameraiq'
-version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = '1.8'
+
+mainClassName = "com.cameraiq.orgapi.OrgApiApplication"
 
 configurations {
 	developmentOnly
@@ -25,13 +36,26 @@ dependencies {
 
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
-	
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
+
+task buildDocker(type: Docker) {
+	baseImage = 'openjdk:8-jdk-alpine'
+	tag = 'org-api'
+	addFile {
+		from jar
+		rename {'org-api.jar'}
+	}
+	entryPoint(['java', '-Djava.security.egd=file:/dev/./urandom', '-jar', '/org-api.jar'])
+ 	exposePort(8080)
+}
+
+buildDocker.dependsOn(build)
 
 test {
 	useJUnitPlatform()
