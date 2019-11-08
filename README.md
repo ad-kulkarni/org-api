@@ -11,6 +11,10 @@ Following operations are supported as of now,
 - Read all Users who belong to specific Organization
 - Read all Organizations to which a user belongs.
 
+# Schema
+
+![Alt text](C:/Users/kulkarnia1/Desktop/ERDiagram.png?raw=true "ER Diagram")
+
 # Technologies used
 - Java 8
 - SpringBoot 2.2
