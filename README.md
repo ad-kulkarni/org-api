@@ -13,7 +13,7 @@ Following operations are supported as of now,
 
 # Schema
 The schema would consist of the following tables,
-- Organization (stores Orgnization records)
+- Organization (stores Organization records)
 - User (stores User records)
 - Organization_User (a bridge table to store associations between organizations and users)
 
