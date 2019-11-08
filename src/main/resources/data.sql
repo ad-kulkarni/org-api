@@ -33,12 +33,12 @@ CREATE TABLE organization_user (
 );
 
 
-INSERT INTO organization (name, address, phone) VALUES
-  ('Org-1', '123 S Street', '+1234567890'),
-  ('Org-2', '246 N Street', '+19087654321');
-
-INSERT INTO user (first_name, last_name, email, address, phone) VALUES
-  ('user-1', 'l1' , 'asda@asdasd.com', '123 S Street', '+1234567890'),
-  ('user-2', 'l2', 'dfsrs@fwer.com', '123 S Street', '+19087654321'),
-  ('user-3', 'l3', 'sdff@dfgd.com', '123 S Street', '+687685456'),
-  ('user-4', 'l4', 'jghj@yjyt.com', '123 S Street', '+19087654321');
+--INSERT INTO organization (name, address, phone) VALUES
+--  ('Org-1', '123 S Street', '+1234567890'),
+--  ('Org-2', '246 N Street', '+19087654321');
+--
+--INSERT INTO user (first_name, last_name, email, address, phone) VALUES
+--  ('user-1', 'l1' , 'asda@asdasd.com', '123 S Street', '+1234567890'),
+--  ('user-2', 'l2', 'dfsrs@fwer.com', '123 S Street', '+19087654321'),
+--  ('user-3', 'l3', 'sdff@dfgd.com', '123 S Street', '+687685456'),
+--  ('user-4', 'l4', 'jghj@yjyt.com', '123 S Street', '+19087654321');
