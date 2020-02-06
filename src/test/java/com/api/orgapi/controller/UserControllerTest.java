@@ -1,7 +1,7 @@
-package com.cameraiq.orgapi.controller;
+package com.api.orgapi.controller;
 
-import com.cameraiq.orgapi.model.User;
-import com.cameraiq.orgapi.service.UserService;
+import com.api.orgapi.model.User;
+import com.api.orgapi.service.UserService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

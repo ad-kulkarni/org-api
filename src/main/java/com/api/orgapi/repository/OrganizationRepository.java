@@ -1,6 +1,6 @@
-package com.cameraiq.orgapi.repository;
+package com.api.orgapi.repository;
 
-import com.cameraiq.orgapi.model.Organization;
+import com.api.orgapi.model.Organization;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

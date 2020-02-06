@@ -1,7 +1,7 @@
-package com.cameraiq.orgapi.controller;
+package com.api.orgapi.controller;
 
-import com.cameraiq.orgapi.model.Organization;
-import com.cameraiq.orgapi.service.OrganizationService;
+import com.api.orgapi.model.Organization;
+import com.api.orgapi.service.OrganizationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

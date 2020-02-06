@@ -1,6 +1,6 @@
-package com.cameraiq.orgapi.repository;
+package com.api.orgapi.repository;
 
-import com.cameraiq.orgapi.model.User;
+import com.api.orgapi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> { }

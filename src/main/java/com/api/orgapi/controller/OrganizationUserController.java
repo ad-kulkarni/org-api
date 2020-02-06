@@ -1,11 +1,11 @@
-package com.cameraiq.orgapi.controller;
+package com.api.orgapi.controller;
 
-import com.cameraiq.orgapi.model.Organization;
-import com.cameraiq.orgapi.model.OrganizationUser;
-import com.cameraiq.orgapi.model.User;
-import com.cameraiq.orgapi.service.OrganizationService;
-import com.cameraiq.orgapi.service.OrganizationUserService;
-import com.cameraiq.orgapi.service.UserService;
+import com.api.orgapi.model.Organization;
+import com.api.orgapi.model.OrganizationUser;
+import com.api.orgapi.model.User;
+import com.api.orgapi.service.OrganizationService;
+import com.api.orgapi.service.OrganizationUserService;
+import com.api.orgapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

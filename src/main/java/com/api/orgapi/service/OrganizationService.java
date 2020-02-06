@@ -1,7 +1,7 @@
-package com.cameraiq.orgapi.service;
+package com.api.orgapi.service;
 
-import com.cameraiq.orgapi.model.Organization;
-import com.cameraiq.orgapi.repository.OrganizationRepository;
+import com.api.orgapi.model.Organization;
+import com.api.orgapi.repository.OrganizationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

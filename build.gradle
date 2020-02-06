@@ -13,11 +13,11 @@ plugins {
 
 apply plugin: 'docker'
 
-group = 'com.cameraiq'
+group = 'com.api'
 
 sourceCompatibility = '1.8'
 
-mainClassName = "com.cameraiq.orgapi.OrgApiApplication"
+mainClassName = "com.api.orgapi.OrgApiApplication"
 
 configurations {
 	developmentOnly

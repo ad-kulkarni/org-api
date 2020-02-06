@@ -1,4 +1,4 @@
-package com.cameraiq.orgapi.model;
+package com.api.orgapi.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
