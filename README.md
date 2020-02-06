@@ -12,9 +12,46 @@ Following operations are supported as of now,
 - Read all Organizations to which a user belongs.
 
 # Schema
+The schema would consist of the following tables,
+- Organization (stores Organization records)
+- User (stores User records)
+- Organization_User (a bridge table to store associations between organizations and users)
 
-![Alt text](C:/Users/kulkarnia1/Desktop/ERDiagram.png?raw=true "ER Diagram")
+```
+DROP TABLE IF EXISTS organization;
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS organization_user;
 
+CREATE TABLE organization (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  address VARCHAR(250) NOT NULL,
+  phone VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  email VARCHAR(250) NOT NULL,
+  address VARCHAR(250) NOT NULL,
+  phone VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE organization_user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  org_id INT NOT NULL,
+  user_id INT NOT NULL,
+
+  FOREIGN KEY (org_id)
+    REFERENCES organization(id)
+    ON UPDATE CASCADE,
+
+  FOREIGN KEY (user_id)
+      REFERENCES user(id)
+      ON UPDATE CASCADE
+);
+```
 # Technologies used
 - Java 8
 - SpringBoot 2.2
